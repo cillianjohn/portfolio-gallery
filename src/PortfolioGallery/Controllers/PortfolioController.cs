@@ -8,5 +8,16 @@ namespace PortfolioGallery.Controllers
 {
     public class PortfolioController : Controller
     {
+        public ActionResult Detail()
+        {
+            if (DateTime.Today.DayOfWeek == DayOfWeek.Monday)
+            {
+                return new RedirectResult("/");
+            }
+
+            
+            return Content("hello from Visual Studio");
+            
+        }
     }
 }
