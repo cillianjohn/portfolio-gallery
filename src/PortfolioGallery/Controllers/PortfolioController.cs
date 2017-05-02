@@ -10,13 +10,10 @@ namespace PortfolioGallery.Controllers
     {
         public ActionResult Detail()
         {
-            if (DateTime.Today.DayOfWeek == DayOfWeek.Monday)
-            {
-                return new RedirectResult("/");
-            }
+            
 
             
-            return Content("hello from Visual Studio");
+            return View();
             
         }
     }
